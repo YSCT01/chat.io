@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chat with Socket.io</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>Chat</h1>
+
+    <h2>Messages</h2>
+
+    <div id="content">
+
+    </div>
+
+    <div id="form">
+        <form onsubmit="return addMessage(this);">
+            <!--  <input id="username" type="text" placeholder="Type your username"> -->
+            <input id="msj" type="text" placeholder="Type here your message">
+            <input id="button" type="submit" value="Send">
+        </form>
+    </div>
+
+</body>
+
+
+
+
+</html>

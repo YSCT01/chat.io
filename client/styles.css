@@ -1,0 +1,157 @@
+* {
+    background-color: rgb(37, 37, 37);
+}
+
+body {
+    height: 700px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid blue;
+}
+
+h2 {
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-left: 6%;
+}
+
+#content {
+    display: block;
+    width: 90%;
+    height: 380px;
+    background-color: seashell;
+    margin: 0px auto;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+#form {
+    display: block;
+    width: 90%;
+    height: 55px;
+    background-color: transparent;
+    margin: 0px auto;
+    padding: 5px;
+}
+
+#form form {
+    display: block;
+}
+
+#form form input#username {
+    float: left;
+    width: 300px;
+    height: 35px;
+    padding: 3px;
+    margin-right: 30px;
+    background-color: white;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+#form form input#msj {
+    float: left;
+    margin-right: 10px;
+    width: 600px;
+    height: 35px;
+    padding: 3px;
+    background-color: white;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+#form form input#button {
+    background-color: green;
+    display: block;
+    float: right;
+    height: 40px;
+    width: 80px;
+    padding: 3px;
+    font-size: 18px;
+    color: white;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+.message {
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: seashell;
+    border-bottom: 25px;
+    padding-bottom: 35px;
+}
+
+.message strong {
+    font-size: 25px;
+    background-color: seashell;
+}
+
+.message p {
+    display: block;
+    width: 600px;
+    padding: 5px;
+    height: auto;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(190, 228, 250);
+    border-radius: 6px;
+}
+
+
+/*-------------------------------------------------------*/
+
+@media only screen and (max-width: 850px) {
+    #form form input#msj {
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .message p {
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #form form input#msj {
+        width: 320px;
+    }
+    #form form input#username {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .message p {
+        width: 300px;
+        font-size: 14px;
+    }
+    .message strong {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .message p {
+        width: 250px;
+    }
+    #form form input#msj {
+        width: 250px;
+    }
+    #form form input#username {
+        width: 150px;
+    }
+    #form form input#button {
+        float: left;
+    }
+}
